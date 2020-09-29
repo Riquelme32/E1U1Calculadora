@@ -1,6 +1,6 @@
 package Logica;
 
-import java.util.Scanner;
+import java.util.Scanner;       //UNA MEGA DISCULPA PROFE PERO TUVE PROBLEMAS PARA HACERLO Y PERSONALES JAJA Y SE QUE NO INFLUYE PERO ESPERO LO CHEQUE
 
 public class Operaciones {
     Scanner leer = new Scanner (System.in);
