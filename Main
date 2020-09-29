@@ -1,1 +1,60 @@
+package Main;
+import Logica.Operaciones;
+import java.util.Scanner;
+/**
+ *
+ * @author AME RIQUELME
+ */
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+         Operaciones metodo= new Operaciones ();
+        Scanner leer = new Scanner (System.in);
+        int opc1,opc2=1;
+        do{
+            opc2 =1;
+           System.out.println();
+           System.out.println("«1. SUMA 1»");
+           System.out.println("«2. RESTA 2»");
+           System.out.println("«3. MULTIPLICACION 3»");
+           System.out.println("«4. DIVISION»");
+           System.out.println("«5. Salir»");
+           System.out.println("«Escribe una de las opciones»");
 
+           opc1 = leer.nextInt(); //crear el objeto en opc1 
+           
+           switch (opc1){
+               case 1:
+                   System.out.println("Suma los numeros"); //mandar a llamar metodos
+                   metodo.Sumar();
+                   break;
+                   
+               case 2:
+                   System.out.println("Resta los numeros");
+                   metodo.Resta();
+                   break;
+                   
+               case 3:
+                   System.out.println("Multiplica los numeros");
+                   metodo.Multiplicacion();
+                   break;
+                   
+               case 4:
+                   System.out.println("Divide los numeros");
+                   metodo.Division();
+                   break;
+                   
+               case 5:
+                   System.out.println("Salir");
+                   break;
+               default : System.out.println("opcion erronea");
+           }
+            if (opc1!=5) { //si la opcion sea igual a 5 entonces sal del programa
+              System.out.println("Desea continuar (0) SI - (1) NO");
+            opc2 = leer.nextInt();  
+            }
+            
+        }while (opc2 !=1);
+    }
+}
