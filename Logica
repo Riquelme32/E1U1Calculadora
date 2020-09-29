@@ -1,1 +1,54 @@
+package Logica;
+
+import java.util.Scanner;
+
+public class Operaciones {
+    Scanner leer = new Scanner (System.in);
+    private double n1,n2;
+    
+    public void Sumar (){ //metodos public
+        double r;
+        System.out.println("Introduce el primer numero");
+        n1 = leer.nextDouble();
+        System.out.println("Introduce el segundo numero");
+        n2 = leer.nextDouble();
+        r = n1 + n2;
+        System.out.println("LA SUMA ES: "+r);
+    }
+    
+    public void Resta (){
+        double r;
+        System.out.println("Introduce el primer numero");
+        n1 = leer.nextDouble();
+        System.out.println("Introduce el segundo numero");
+        n2 = leer.nextDouble();
+        r = n1 - n2;
+        System.out.println("LA SUMA ES: "+r);
+    }
+    
+    public void Multiplicacion (){
+        double r;
+        System.out.println("Introduce el primer numero");
+        n1 = leer.nextDouble();
+        System.out.println("Introduce el segundo numero");
+        n2 = leer.nextDouble();
+        r = n1 * n2;
+        System.out.println("LA MULTIPLICACION ES: "+r);
+    }
+    
+    public void Division (){
+        double r;
+        try{ //exepciones
+        System.out.println("Introduce el Dividendo");
+        n1 = leer.nextDouble();
+        System.out.println("Introduce el Divisor");
+        n2 = leer.nextDouble();
+        r = n1 / n2;
+        System.out.println("LA DIVISION ES: "+r);
+    }catch (Exception e){
+            System.out.println("ERROR");
+    }
+    
+}
+}
 
